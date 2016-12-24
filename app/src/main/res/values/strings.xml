@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">NeoTrack</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="action_update_tiendas">Actualizar tiendas</string>
+    <string name="action_check_config">Verificar configuracion</string>
+    <string name="action_about">Acerca de NeoTrack</string>
+
+    <string name="get_code"> Leer código</string>
+    <string name="hint_code"> Código </string>
+    <string name="hint_direccion"> Dirección </string>
+    <string name="hint_obs"> Observación </string>
+    <string name="add_photos"> Adjuntar fotos </string>
+    <string name="title_activity_list">ListActivity</string>
+
+
+    <string name="turn_on_flashlight">Encender la luz del Flash</string>
+    <string name="turn_off_flashlight">Apagar la luz del Flash</string>
+
+
+    <string name="hide">HIDE</string>
+    <string name="more">MORE</string>
+    <string name="sample_widget">Picasso Sample Widget</string>
+    <string name="sample_notification">Picasso Sample Notification</string>
+    <string name="select_picture">Select Picture</string>
+  <string name="disk_cache_description">On Ice Cream Sandwich and above, a disk cache is
+    automatically used so that subsequent requests for the same URL do not re-download the
+    image.\n\nTo enable this functionality on pre-ICS use a standalone HTTP client with caching such
+    as OkHttp.
+  </string>
+
+    <string name="ivDesc">Foto</string>
+    <string name="state_baja">Dar de baja</string>
+    <string name="about_message">Version : 0.1.5 \n  &#169; 2016</string>
+    <string name="no_data_available">No hay lecturas para enviar</string>
+    <string name="exit_msg">¿Deseas salir sin registrar?</string>
+    <string name="info">Lectura sin incompleta</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="action_return_list">Volver a lista</string>
+
+
+</resources>

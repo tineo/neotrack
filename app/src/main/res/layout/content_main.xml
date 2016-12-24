@@ -1,0 +1,194 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+
+
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.makinap.tineo.neotrack.MainActivity"
+    tools:showIn="@layout/activity_main"
+
+    style="@style/AppTheme"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginRight="50dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_code"
+            android:inputType="text|textMultiLine"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:enabled="false" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton5"
+            android:src="@android:drawable/ic_menu_camera"
+            android:layout_marginLeft="-50dp"
+            android:onClick="scanCode"
+            android:layout_marginTop="25dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/add_photos"
+            android:id="@+id/textView"
+            android:paddingBottom="15dp"
+            android:paddingTop="10dp" />
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/ivImage"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/ivDesc"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/ivImage2"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/ivDesc"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/ivImage3"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/ivDesc"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/ivImage4"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/ivDesc"
+                android:layout_marginLeft="5dp" />
+
+            <ImageButton
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/imageButton2"
+                android:contentDescription="@string/ivDesc"
+                android:src="@drawable/photo_multiple_option_add" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_direccion"
+            android:inputType="text|textMultiLine"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+        android:text="Tienda"
+        android:id="@+id/textView2"
+        android:layout_marginTop="10dp" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seleccion tienda"
+        android:id="@+id/ac_tienda" />
+
+
+    <ImageButton
+        android:layout_width="38dp"
+        android:layout_height="42dp"
+        android:id="@+id/ib_tienda"
+        android:layout_gravity="right"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-48dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_observacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_observacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_obs"
+            android:inputType="text|textMultiLine"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox android:id="@+id/state_baja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/state_baja"
+         />
+
+
+</LinearLayout>
+

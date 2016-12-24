@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3e9671</color>
+    <color name="colorPrimaryDark">#1a6438</color>
+    <color name="colorAccent">#33b16c</color>
+
+    <color name="colorButtonNormal">#439b4d</color>
+    <color name="textColorPrimary">#36613f</color>
+
+
+    <color name="overlay_selector_pressed">#40000000</color>
+    <color name="window_background">#ff202020</color>
+    <color name="list_divider">#ff555555</color>
+
+</resources>
